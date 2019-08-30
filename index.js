@@ -63,7 +63,8 @@ function Auth0Metrics (segmentKey, dwhEndpoint, label, options) {
  * Expose current `Auth0Metrics`'s version
  */
 
-Auth0Metrics.version = require('package.version');
+// TODO: Check if this works
+Auth0Metrics.version = process.env.npm_package_version;
 
 /**
  * @public
